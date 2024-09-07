@@ -14,9 +14,9 @@ const BlogPage = () => {
 
     useEffect(() => {
         async function fetchBlogs() {
-            let url = `http://localhost:5000/blogs?page=${currentPage}&limit=${pageSize}`;
+            let url = `https://blog-project-123.onrender.com/blogs?page=${currentPage}&limit=${pageSize}`;
 
-            // filterd by category
+            // filtered by category
            if(selectedCategory){
             url +=`&category=${selectedCategory}`;
            }
